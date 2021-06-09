@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: block;
+            background-image: url(https://www.desktopbackground.org/download/o/2010/05/23/21828_london-hd-wallpaper-london-images-free-new-wallpapers_1600x1200_h.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: 'Baloo 2', cursive;
+            color: white;
+            margin: 18% 6%;
+            padding: 0px;
+        }
+        .container {
+            text-align: center;
+            border: 3px solid white;
+            margin: 18% 30%;
+            margin-bottom: 20%;
+            margin-top: 20%;
+            padding: 3%;
+            width: 32%;
+            height: 50%;
+            border-radius: 20px;
+        }
+        .input{
+            padding: 6px;
+            margin: 4px;
+            text-align:center;
+            width: 215px;
+        }  
+
+        .name{
+            margin: 14px auto;
+            padding: 0px;
+            text-align:center;
+        }
+        .head{
+            text-align:center;
+            margin: 14px ;
+            padding: 6px;
+            width: 312px;
+            font-size: 34px;
+        }
+        .signin:hover{
+            background-color: rgb(167, 164, 164);
+           
+        }
+        .signin{
+            text-align:center;
+            margin: 14px auto;
+            padding: 6px;
+            width: 227px;
+            font-size:14px ;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="backend.php">
+            <h2 class="head">Welcome to myTrip</h2>
+            
+            <div class="name">
+              <input class="input" type="text" name="" placeholder="Enter your Name">
+              <br>
+              <input class="input" type="text" name="" placeholder="Enter your Email">
+              <br>
+              <input class="input" type="password" name="" placeholder="Enter your Password">
+            </div> 
+            <button class="signin">Sign In</button>
+           
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

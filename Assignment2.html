@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Assignment2</title>
+    <style>
+        body{
+            background-color: lightyellow;
+        }
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Places</th>
+                <th>Discription</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://img.theculturetrip.com/450x/smart/wp-content/uploads/2016/05/image7.jpeg"
+                        alt="Darjeeling" width="350px" height="300px"></td>
+                <td>It is a superlative combination of fern-filled valleys, snow-capped peaks and tea-scented air.
+                    Darjeeling is famous for tea gardens, magnificent view of the Himalayas, Kanchenjunga peak,
+                    beautiful valleys, trekking to high altitude and famous toy train.</td>
+            </tr>
+            <tr>
+                <td><img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/12/Beas-Kund.jpg" alt="Manali"
+                        width="350px" height="300px"></td>
+                <td>Manali is a resort and tourist town nestled in the mountains of the Indian state of Himachal Pradesh
+                    near the northern end of the Kullu Valley in the Beas River Valley. </td>
+            </tr>
+            <tr>
+                <td><img src="https://cdnprs.wisconsin.dev/wp-content/uploads/2021/05/mercuremaldiveskoodooresortmaldivesexterior.jpeg"
+                        alt="Maldives" width="350px" height="300px"></td>
+                <td>The Maldives are known as “the tropical paradise” for reasons such as its beauty.Each island has
+                    pure white sandy beaches. The sea covers 99% of the Maldives and it is where you can see beautiful
+                    fish and corals.</td>
+            </tr>
+            <tr>
+                <td><img src="https://i.pinimg.com/originals/f5/a4/06/f5a406c384bd23791bf7150a408efcbe.jpg"
+                        alt="Kedarnath himalayan" width="350px" height="300px"></td>
+                <td>One of the most important temples of Sanatan Dharma (Hinduism) the Kedarnath temple shrine is
+                    situated in the high altitude said to have been constructed there by the Pandavas of Mahabharata
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form action="backend.php">
+        <h2>Places to Visit</h2>
+        <label for="firstname">First Name </label>
+        <input type="text" name="firstname" placeholder="Enter First Name">
+        <br>
+        <br>
+        <label for="lastname">Last Name </label>
+        <input type="text" name="lastname" placeholder="Enter Last Name">
+        <br>
+        <br>
+        <input type="radio" name="places" value="Darjeeling">
+        <label for="darjeeling">Darjeeling</label>
+        
+
+        <input type="radio" name="places" value="Manali">
+        <label for="manali">Manali</label>
+        
+
+        <input type="radio" name="places" value="Maldieves">
+        <label for="maldives">Maldives</label>
+        
+        
+        <input type="radio" name="places" value="Kedarnath">
+        <label for="kedarnath">Kedarnath</label>
+        <br>
+        <br>
+        <input type="button" value="Submit">
+         <br>
+         <br>
+    </form>
+    <br>
+    <br>
+    <br>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>

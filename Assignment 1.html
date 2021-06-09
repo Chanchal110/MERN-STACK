@@ -1,0 +1,85 @@
+<!--This is a comment-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 1</title>
+</head>
+
+<body style="background-color:  rgb(228, 231, 228);">
+
+    <img alt="Taj Mahal" src="https://www.holidify.com/images/cmsuploads/compressed/attr_1448_20190212100722jpg"
+        width="300px" height="300px" />
+    <img alt="lotus temple" src="https://www.nativeplanet.com/img/2017/09/coverpic-14-1505384461.jpg" width="300px"
+        height="300px" />
+    <img alt="India gate"
+        src="https://www.holidify.com/images/cmsuploads/compressed/5621259188_e74d63cb05_b_20180302140149.jpg"
+        width="300px" height="300px" />
+    <img alt="Golden temple"
+        src="https://www.holidify.com/images/cmsuploads/compressed/1024px-The_Golden_Temple_20170809172905.jpg"
+        width="300px" height="300px" />
+
+    <h3 style="color: rgb(226, 30, 30);">Image-1 Taj Mahal</h3>
+    <p style="font-style: italic;">
+        The <b>Taj Mahal</b> is a mausoleum complex in <b>Agra</b>, western <b>Utter Pradesh</b> state, northern <b>India</b>. It is considered the
+        finest example of Mughal architecture.The Taj Mahal was built as a tomb for <b>Mumtaz Mahal</b> (“Chosen One of the
+        Palace”) by her husband, the Mughal emperor <b>Shah Jahān</b> (reigned 1628–58). She died in childbirth in 1631
+    </p>
+    <h3 style="color: rgb(226, 30, 30);">Image-2 Lotus Temple</h3>
+    <p style="font-style: italic;">The <b>Lotus Temple</b>, located in <b>Delhi</b>, <b>India</b>, is a <b>Baháʼí House</b> of Worship that was
+        dedicated in December 1986.
+        Notable for its flowerlike shape, it has become a prominent attraction in the city. The Lotus Temple has won
+        numerous architectural awards and has been featured in many newspaper and magazine articles.</p>
+    <h3 style="color: rgb(226, 30, 30);">Image-3 India Gate</h3>
+    <p style="font-style: italic;">
+        The <b>India Gate</b> (formerly known as <b>the All India War Memorial</b>) is a war memorial located astride the Rajpath, on
+        the eastern edge of the "ceremonial axis" of New Delhi, formerly called <b>Kingsway</b>. It stands as a memorial to
+        70,000 soldiers of the British Indian Army who died in between 1914 and 1921 in the <b>First World War</b>.
+    </p>
+    <h3 style="color: rgb(226, 30, 30);">Image-4 Golden Temple</h3>
+    <p style="font-style: italic;">
+        The <b>Golden Temple</b>  is famous for its full golden dome, it is one of the most sacred pilgrim spots for <b>Sikhs</b>. The
+        Mandir is built on a 67-ft square of marble and is a two storied structure. <b>Maharaja Ranjit Singh</b> had the upper
+        half of the building built with approximately 400 kg of gold leaf.
+    </p>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>

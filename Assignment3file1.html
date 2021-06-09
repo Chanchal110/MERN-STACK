@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+   
+    <style>
+        body {
+            display: block;
+            background-image: url(https://www.desktopbackground.org/download/o/2010/05/23/21828_london-hd-wallpaper-london-images-free-new-wallpapers_1600x1200_h.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: 'Baloo 2', cursive;
+            color: white;
+            margin: 18% 6%;
+            padding: 0px;
+            margin-bottom: 17%;
+        }
+
+        .container {
+            text-align: center;
+            border: 3px solid white;
+            margin: 18% 30%;
+            margin-bottom: 20%;
+            margin-top: 20%;
+            padding: 3%;
+            width: 32%;
+            height: 50%;
+            border-radius: 20px;
+        }
+        
+        .input{
+            padding: 4px;
+            margin: 3px;
+            text-align:center;
+            width: 215px;
+         }  
+
+        .name{
+            margin: 14px auto;
+            padding: 0px;
+            text-align:center;
+        }   
+        .login{
+            text-align:center;
+            margin: 14px auto;
+            padding: 6px;
+            width: 227px;
+            margin-bottom: 46px;
+            font-size:14px ;
+            cursor: pointer;
+        }
+        .login:hover{
+            background-color: rgb(167, 164, 164);
+            
+            
+        }
+        .register:hover{
+            background-color: rgb(167, 164, 164);
+           
+        }
+        .register{
+            text-align:center;
+            margin: 14px auto;
+            padding: 6px;
+            width: 227px;
+            font-size:14px ;
+            cursor: pointer;
+        }
+        .head{
+            text-align:center;
+            margin: 14px ;
+            padding: 6px;
+            width: 312px;
+            font-size: 34px;
+           
+          }
+          h4{
+              padding: 0px;
+              font-size: 15px;
+              margin: 0px;
+          }
+     
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="backend.php">
+            <h2 class="head">Welcome to myTrip</h2>
+            
+            <div class="name">
+              <input class="input" type="text" name="" placeholder="Enter your Email">
+              <br>
+              <input class="input" type="password" name="" placeholder="Enter your Password">
+            </div> 
+            <button class="login">Login</button>
+        </form>
+        <form action="Assignment3file1.html">
+            <h4 >Don't Have Account ?</h4>
+           <button  class="register">Sign In</button>
+        </form>
+    </div>
+</body>
+
+</html>
